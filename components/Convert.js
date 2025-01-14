@@ -14,7 +14,12 @@ export default function Convert() {
 
   const handleCalculate = () => {
     const num = parseFloat(number);
-    if (isNaN(num)) setResult("Будь ласка, введіть число.");
+    if (
+      isNaN(num) ||
+      (selectedConversion === "1" && num < 0) ||
+      (selectedConversion === "2" && num < 0)
+    )
+      setResult("Будь ласка, введіть корректне число.");
     else if (selectedConversion === "1")
       setResult(`${num} км = ${(num * 0.62137).toFixed(2)} миль`);
     else if (selectedConversion === "2")

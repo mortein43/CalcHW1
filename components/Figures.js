@@ -13,7 +13,7 @@ export default function Figures() {
   const [radius, setRadius] = useState("");
   const [base, setBase] = useState("");
   const [triangleHeight, setTriangleHeight] = useState("");
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState("Результат:");
   const [selectedConversion, setSelectedConversion] = useState(null);
 
   const handleCalculate = () => {
@@ -92,7 +92,7 @@ export default function Figures() {
         </>
       )}
 
-      <Text style={styles.result}>Результат: {result}</Text>
+      <Text style={styles.result}>{result}</Text>
       <Button title="Порахувати" onPress={handleCalculate} />
     </>
   );
