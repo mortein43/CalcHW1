@@ -34,14 +34,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     backgroundColor: "white",
   },
-  placeholderStyle,
-  selectedTextStyle: {
-    fontSize: 16,
-  },
   placeholderStyle: {
+    fontSize: 16,
     color: "gray",
   },
   selectedTextStyle: {
+    fontSize: 16,
     color: "black",
   },
 });
